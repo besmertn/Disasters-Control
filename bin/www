@@ -6,9 +6,9 @@ let app = require('../app'),
 
 let port = normalizePort(process.env.PORT || config.get('port'));
 app.set('port', port);
-let server = https.createServer(config.getOnes('httpsOptions'), app);
+let server = http.createServer(app);
 server.listen(port, function () {
-  console.log(`Domain: https://127.0.0.1:${port}/`)
+  console.log(`Domain: http://127.0.0.1:${port}/`)
 });
 server.on('error', onError);
 
