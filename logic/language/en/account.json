@@ -1,0 +1,21 @@
+{
+	"ownDevices": "Your devices",
+	"add": "Add",
+	"location": "location",
+	"mapDescribe": "Map describe",
+	"normalState": "Normal state",
+	"earthquake": "Earthquake",
+	"fire": "Fire",
+	"flood": "Flood",
+	"radiation": "Radiation",
+	"disastersNotification":"Disasters notification",
+	"describe": "Describe",
+	"dimension": "Dimension",
+	"confirmed": "Confirmed",
+	"time": "Time",
+	"back": "back",
+	"submit": "Submit",
+	"options": "Options",
+	"delete":"Delete",
+	"addData": "Add data"
+}

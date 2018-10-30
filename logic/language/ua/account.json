@@ -1,0 +1,21 @@
+{
+	"ownDevices": "Ваші пристрої",
+	"add": "Додати",
+	"location": "Місцезнаходження",
+	"mapDescribe": "Опис позначень",
+	"normalState": "Нормальний стан",
+	"earthquake": "Землетрус",
+	"fire": "Пожежа",
+	"flood": "Потоп",
+	"radiation": "Радіація",
+	"disastersNotification":"Повідомлення про стихійні лиха",
+	"describe": "Опис",
+	"dimension": "Розмір",
+	"confirmed": "Підтверджено",
+	"time": "Час",
+	"back": "Назад",
+	"submit": "Надіслати",
+	"options": "Параметри",
+	"delete":"Видалити",
+	"addData": "Додати дані"
+}

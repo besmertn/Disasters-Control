@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<% include _layouts/header %>
+		<link rel='stylesheet' href='/css/main.css'/>
+	</head>
+	<body>
+    <script type="text/javascript">
+      window.localization =  <%- JSON.stringify(text.page) %>;
+    </script>
+    <% include _layouts/title %>
+      <div class="wrapper">
+          <div class="center-align">
+              <div class="data__container-title"><%= text.page.globalMap %></div>
+              <div class="data__container">
+                  <div class="main-map" id="map"></div>
+                  <div class="main-map__describe" id="mapDescribe">
+                    <div class="main-map__describe-title"><%= text.page.mapDescribe %></div>
+                    <div class="main-map__describe-container">
+                      <div class="main-map__describe-data"><img class="main-map__describe-image" src="/img/markers/rescue-base.png"/> — <%= text.page.rescueBase %></div>
+                      <div class="main-map__describe-data"><img class="main-map__describe-image" src="/img/markers/earthquake.png"/> — <%= text.page.earthquake %></div>
+                      <div class="main-map__describe-data"><img class="main-map__describe-image" src="/img/markers/fire.png"/> — <%= text.page.fire %></div>
+                      <div class="main-map__describe-data"><img class="main-map__describe-image" src="/img/markers/flood.png"/> — <%= text.page.flood %></div>
+                      <div class="main-map__describe-data"><img class="main-map__describe-image" src="/img/markers/radiation.png"/> — <%= text.page.radiation %></div>
+                      <div class="main-map__describe-data"><div class="main-map__describe-image describe-round" id="describeRound"></div> — <%= text.page.epicenter %></div>
+                      <div class="main-map__describe-data"><div class="main-map__describe-image describe-line" id="describeLineToRound"></div> — <%= text.page.rescueOperation %></div>
+                      <div class="main-map__describe-data"><div class="main-map__describe-image describe-line" id="describeLineToDevice"></div> — <%= text.page.rescueOperation %></div>
+                    </div>
+                  </div>
+              </div>
+              <div class="data__container-title"><%= text.page.disastersInformation %></div>
+              <div class="data__container">
+                  <div class="account__container-table">
+                    <table class="account__table" id="disasterTable">
+                      <thead class="account__table-head">
+                        <tr>
+                          <td>№</td>
+                          <td><%= text.page.location %></td>
+                          <td><%= text.page.dimension %></td>
+                          <td><%= text.page.describe %></td>
+                        </tr>
+                      </thead>
+                      <tbody class="account__table-body">
+                      </tbody>
+                    </table>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <% include _layouts/footer %>
+	</body>
+  <script type="text/javascript" src="/js/page/index.js"></script>
+  <script async defer src="https://maps.googleapis.com/maps/api/js?key=<%= mapKey %>&libraries=geometry&callback=mapCallback"></script>
+</html>

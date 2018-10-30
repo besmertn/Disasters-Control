@@ -1,0 +1,15 @@
+{
+	"globalMap": "Глобальна карта",
+	"mapDescribe": "Опис позначень",
+	"rescueBase": "Рятувальна база",
+	"earthquake": "Землетрус",
+	"fire": "Пожежа",
+	"flood": "Потоп",
+	"radiation": "Радіація",
+	"epicenter": "Епіцентр катастрофи",
+	"rescueOperation": "Рятувальна операція",
+	"disastersInformation": "Інформація про катастрофи",
+	"location": "Місцезнаходження",
+	"dimension": "Розмір",
+	"describe": "Опис"
+}

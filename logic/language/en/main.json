@@ -1,0 +1,15 @@
+{
+	"globalMap": "Global map",
+	"mapDescribe": "Map describe",
+	"rescueBase": "Rescue base",
+	"earthquake": "Earthquake",
+	"fire": "Fire",
+	"flood": "Flood",
+	"radiation": "Radiation",
+	"epicenter": "Disasters epicenter",
+	"rescueOperation": "Rescue operation",
+	"disastersInformation": "Disasters information",
+	"location": "Location",
+	"dimension": "Dimension",
+	"describe": "Describe"
+}

@@ -1,0 +1,14 @@
+{
+  "port": "1488",
+  "IOTport": "1489",
+  "default_language": "en",
+  "https_key": "12345",
+  "map_key": "AIzaSyB2DGcZmx6-X0p8IPepZf3EKXidzroXaac",
+  "encode_server_key": "ZQ26e-0sxNw-d0fdz-rYqql-BzotU-0woTc",
+  "sql_connect": {
+      "host"     : "127.0.0.1",
+      "user"     : "root",
+      "password" : "",
+      "database" : "DisastersControl"
+  }
+}

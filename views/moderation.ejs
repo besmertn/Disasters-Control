@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <% include _layouts/header %>
+    <link rel='stylesheet' href='/css/account.css'/>
+    <link rel='stylesheet' href='/css/moderation.css'/>
+</head>
+<body>
+<% include _layouts/title %>
+<script type="text/javascript">
+    window.localization =  <%- JSON.stringify(text.page) %>;
+</script>
+<div class="wrapper">
+    <div class="accuont center-align">
+    	<div class="account__container-title" id="ownDevices"><%= text.page.disasterConfirmation %></div>
+    	<div class="account__container">
+			<div class="account__container-table">
+    			<table class="account__table" id="disasterTable">
+    				<thead class="account__table-head">
+    					<tr>
+    						<td>№</td>
+    						<td><%= text.page.id %></td>
+    						<td><%= text.page.location %></td>
+    						<td><%= text.page.describe %></td>
+    						<td><%= text.page.dimension %></td>
+    						<td class="account__table-button-cell"><%= text.page.options %></td>
+    					</tr>
+    				</thead>
+    				<tbody class="account__table-body">
+    				</tbody>
+    			</table>
+    		</div>
+    	</div>
+    </div>
+</div>
+</body>
+<script async defer type="text/javascript" src="/js/formValidator.js"></script>
+<script async defer type="text/javascript" src="/js/page/moderation.js"></script>
+</html>

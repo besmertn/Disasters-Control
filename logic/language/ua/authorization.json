@@ -1,0 +1,10 @@
+{
+	"authorisation":"Авторизація",
+	"mail":"E-mail",
+	"password":"Пароль",
+	"logIn":"Увійти",
+	"registration":"Реєстрація",
+	"name":"Повне ім'я",
+	"confirmPassword":"Підтвердіть пароль",
+	"signUp":"Зареєструватися"
+}

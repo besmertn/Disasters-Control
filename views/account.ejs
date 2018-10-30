@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <% include _layouts/header %>
+    <link rel='stylesheet' href='/css/account.css'/>
+</head>
+<body>
+<% include _layouts/title %>
+<script type="text/javascript">
+    window.localization =  <%- JSON.stringify(text.page) %>;
+</script>
+<div class="wrapper">
+    <div class="accuont center-align">
+        <div class="account__container-title"><%= text.page.ownDevices %></div>
+    	<div class="account__container">
+    		<div class="account__container-button-block">
+    			<div class="account__container-button" id="addDeviceButton"><%= text.page.add %></div>
+			</div>
+
+			<div class="account__container-table">
+    			<table class="account__table" id="devicesTable">
+    				<thead class="account__table-head">
+    					<tr>
+    						<td>№</td>
+    						<td><%= text.page.location %></td>
+    						<td class="account__table-button-cell"><%= text.page.options %></td>
+    					</tr>
+    				</thead>
+    				<tbody class="account__table-body">
+    				</tbody>
+    			</table>
+    		</div>
+
+            <div class="account__main-map" id="devicesMap"></div>
+            <div class="main-map__describe" id="mapDescribe">
+              <div class="main-map__describe-title"><%= text.page.mapDescribe %></div>
+              <div class="main-map__describe-container">
+                <div class="main-map__describe-data"><img class="main-map__describe-image" src="/img/markers/default.png"/> — <%= text.page.normalState %></div>
+                <div class="main-map__describe-data"><img class="main-map__describe-image" src="/img/markers/earthquake.png"/> — <%= text.page.earthquake %></div>
+                <div class="main-map__describe-data"><img class="main-map__describe-image" src="/img/markers/fire.png"/> — <%= text.page.fire %></div>
+                <div class="main-map__describe-data"><img class="main-map__describe-image" src="/img/markers/flood.png"/> — <%= text.page.flood %></div>
+                <div class="main-map__describe-data"><img class="main-map__describe-image" src="/img/markers/radiation.png"/> — <%= text.page.radiation %></div>
+              </div>
+            </div>
+    	</div>
+    	<div class="account__container-title"><%= text.page.disastersNotification %></div>
+    	<div class="account__container">
+            <div class="account__container-button-block">
+                <div class="account__container-button" id="addDisasterButton"><%= text.page.add %></div>
+            </div>
+    		<div class="account__container-table">
+    			<table class="account__table" id="disastersTable">
+    				<thead class="account__table-head">
+    					<tr>
+    						<td>№</td>
+    						<td><%= text.page.location %></td>
+    						<td><%= text.page.describe %></td>
+    						<td><%= text.page.dimension %></td>
+    						<td class="account__table-button-cell"><%= text.page.confirmed %></td>
+    						<td><%= text.page.time %></td>
+    						<td class="account__table-button-cell"><%= text.page.options %></td>
+    					</tr>
+    				</thead>
+    				<tbody class="account__table-body">
+    				</tbody>
+    			</table>
+    		</div>
+    	</div>
+    </div>
+</div>
+<% include _layouts/footer %>
+
+<div class="screen-wrapper" id="editBlockWrapper"></div>
+<div class="edit-product" id="editBlock">
+	<div class="edit-product__back" id="editBlockBack"><i class="fas fa-chevron-left"></i> <span class="edit-product__back-text"><%= text.page.back %></span></div>
+	<div class="edit-product__title" id="editBlockTitle"><%= text.page.addData %></div>
+	<div class="edit-product__form">
+		<span class="edit-product__form-label-title"><%= text.page.location %></span>
+        <div class="edit-product__map" id="editFieldMap"></div>
+        <label class="edit-product__form-label"></label>
+		<label class="edit-product__form-label">
+			<span class="edit-product__form-label-title"><%= text.page.describe %></span>
+			<input class="edit-product__form-field" type="text" id="editFieldDescribe">
+		</label>
+		<label class="edit-product__form-label">
+			<span class="edit-product__form-label-title"><%= text.page.dimension %></span>
+			<input class="edit-product__form-field" type="text" id="editFieldDimension">
+		</label>
+	</div>
+	<div class="edit-product__form-button-block">
+		<div class="edit-product__form-button" id="editBlockSubmit"><%= text.page.submit %></div>
+	</div>
+</div>
+</body>
+<script async defer type="text/javascript" src="/js/formValidator.js"></script>
+<script  type="text/javascript" src="/js/page/account.js"></script>
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=<%= mapKey %>&language=<%= language %>&callback=mapCallback"></script>
+</html>

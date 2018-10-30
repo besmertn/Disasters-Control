@@ -1,0 +1,25 @@
+<div class="title">
+	<div class="center-align flex-block">
+		<div class="title__block side-block">
+			<a class="title__link" href="/"><%= text.title.mainPage %></a>
+		</div>
+		<div class="title__block">
+			<a class="title__logo" href="/">
+				<img class="title__logo-img" src="/img/logo.png">
+			</a>
+		</div>
+		<div class="title__block side-block">
+			<div class="footer__language-list">
+                <div class="footer__language-button language-en" data-value="en"></div>
+                <div class="footer__language-button language-ua" data-value="ua"></div>
+            </div>
+			<%if (user.id != undefined) { %>
+   				<a class="title__bar-button title__link" href="/authorisation/exit"><%= text.title.exit %></a>
+   				<a class="title__bar-button title__link" href="/account"><%= text.title.account %></a>
+    		<% } else{ %>
+			    <a class="title__bar-button title__link" href="/authorisation"><%= text.title.signIn %></a>
+   				<a class="title__bar-button title__link" href="/registration"><%= text.title.signUp %></a>
+			<% } %>
+		</div>
+	</div>
+</div>

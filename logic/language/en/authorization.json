@@ -1,0 +1,10 @@
+{
+	"authorisation":"Authorisation",
+	"mail":"E-mail",
+	"password":"Password",
+	"logIn":"Log in",
+	"registration":"Registration",
+	"name":"Full name",
+	"confirmPassword":"Confirm password",
+	"signUp":"Sign up"
+}
